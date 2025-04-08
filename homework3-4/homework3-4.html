@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>도형 계산</title>
+</head>
+<body>
+    <h1>도형 계산 (면적 & 체적)</h1>
+    
+    <!-- (1) 삼각형 면적 계산 -->
+    <h2>삼각형 면적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="triangle">
+        <label>밑변: 
+            <input type="number" name="base" step="0.01" required>
+        </label>
+        <br>
+        <label>높이: 
+            <input type="number" name="height" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+
+    <!-- (2) 직사각형 면적 계산 -->
+    <h2>직사각형 면적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="rectangle">
+        <label>가로: 
+            <input type="number" name="width" step="0.01" required>
+        </label>
+        <br>
+        <label>세로: 
+            <input type="number" name="height" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+
+    <!-- (3) 원 면적 계산 -->
+    <h2>원 면적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="circle">
+        <label>반지름: 
+            <input type="number" name="radius" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+
+    <!-- (4) 직육면체 체적 계산 -->
+    <h2>직육면체 체적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="rectsolid">
+        <label>가로: 
+            <input type="number" name="width" step="0.01" required>
+        </label>
+        <br>
+        <label>세로: 
+            <input type="number" name="length" step="0.01" required>
+        </label>
+        <br>
+        <label>높이: 
+            <input type="number" name="height" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+
+    <!-- (5) 원통 체적 계산 -->
+    <h2>원통 체적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="cylinder">
+        <label>반지름: 
+            <input type="number" name="radius" step="0.01" required>
+        </label>
+        <br>
+        <label>높이: 
+            <input type="number" name="height" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+
+    <!-- (6) 구 체적 계산 -->
+    <h2>구 체적</h2>
+    <form method="POST" action="formcgi.php">
+        <input type="hidden" name="shape" value="sphere">
+        <label>반지름: 
+            <input type="number" name="radius" step="0.01" required>
+        </label>
+        <br>
+        <button type="submit">계산</button>
+    </form>
+</body>
+</html>
